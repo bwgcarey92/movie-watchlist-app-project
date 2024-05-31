@@ -97,7 +97,11 @@ main{
     font-size: 0.8em;
 }
 
-#movie-img,
+#movie-img{
+    max-width: 300px;
+    width: 100%;
+}
+
 #title-container>div{
     width: 30%;
 }
