@@ -3,3 +3,135 @@ body{
     margin: 0;
     padding: 0;
 }
+
+body{
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+}
+
+button,
+a:hover{
+    cursor: pointer;
+}
+
+/*Header section*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-image: url('./images/moviebackground.png');
+    background-size: cover;
+    position: relative;
+    gap: 3em;
+}
+
+h1,
+#watchlist{
+    color: white;
+    background-color: rgba(10, 10, 10, 0.8);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    padding: 1em 1em;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 2.68rem;
+}
+
+#watchlist{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/*Main section*/
+main{
+    position: relative;
+}
+
+/*Search Bar section*/
+#search-bar{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -1.5em;
+    width: 100%;
+    
+}
+
+#search-input,
+#search-btn{
+    font-family: 'Hind', sans-serif;
+    border: 2px solid #d1d5db;
+}
+
+#search-input{
+    padding: 0.75em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 300px;
+    border-right: none;
+}
+
+#search-btn{
+    padding: 0.75em 2em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*Movies section*/
+#movies-container{
+    padding-top: 10em;
+    color: #dfdddd;
+}
+
+#watchlist-container{
+    padding-top: 3em;
+    padding-bottom: 0;
+}
+
+#card-container{
+    margin: 1em 2em;
+    color: #000000;
+    font-size: 0.8em;
+}
+
+#movie-img,
+#title-container>div{
+    width: 30%;
+}
+
+#card-container,
+#title-container,
+#title-container>div,
+#info-container{
+    display: flex;
+    align-items: center;
+}
+
+#title-container{
+    padding-left: 2em;
+}
+#title-container>div{
+    margin-left: 2em;
+    justify-content: flex-start;
+}
+#title-container>div>img {
+    width: 20%;
+}
+
+#info-container{
+    justify-content: space-around;
+}
+
+#add-to-watchlist{
+    background-color: #111827;
+    color: #ffffff;
+    border-radius: 50%;
+    font-weight: 700;
+}
+#movie-summary{
+    color: #6b7280;
+    font-size: 0.9rem;
+}
