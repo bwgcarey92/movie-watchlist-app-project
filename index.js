@@ -6,6 +6,7 @@ searchBtn.addEventListener('click', function(){
     fetch(`http://www.omdbapi.com/?apikey=c5b0dc84&s=${searchInput.value}`)
         .then(res => res.json())
         .then(data => {
+            searchInput.value = ''
             moviesContainer.innerHTML = ''
             moviesContainer.style.paddingTop = '2em'
 
